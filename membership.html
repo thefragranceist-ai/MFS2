@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mitgliedschaft | Maygasse Finance Society</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/maygasse-crest.svg" alt="crest"/>Maygasse Finance Society</a>
+      <a class="back" href="index.html">Zurück</a>
+    </div>
+    <div class="container">
+      <h1 class="hero-title">Mitgliedschaft</h1>
+      <p class="hero-sub">Was dich als Mitglied erwartet, was wir erwarten und der Weg zur Aufnahme.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="hero-title reveal" style="font-size:2rem;color:var(--green)">Was dich als Mitglied erwartet</h2>
+      <div class="card-grid">
+        <article class="card reveal"><div class="icon">📘</div><h3>Erstklassige Bildung</h3><p>Exklusive Workshops, Gastvorträge und fundierte Finanzbildung.</p></article>
+        <article class="card reveal"><div class="icon">🤝</div><h3>Prestigeträchtiges Netzwerk</h3><p>Kontakt zu ambitionierten Schülerinnen, Schülern und Alumni.</p></article>
+        <article class="card reveal"><div class="icon">📈</div><h3>Praktische Erfahrung</h3><p>Analysen, Challenges und echte Fallstudien mit Praxisfokus.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <h2 class="hero-title reveal" style="font-size:2rem;color:var(--green)">Was wir von Ihnen erwarten</h2>
+      <div class="panel reveal">
+        <ul class="list">
+          <li>Eingeschriebene/r Schüler/in an der Maygasse Business Academy</li>
+          <li>Interesse an Finanzmärkten und Wirtschaft</li>
+          <li>Engagement, Teamfähigkeit und Verantwortungsbewusstsein</li>
+          <li>Zuverlässigkeit und langfristiges Denken</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <h2 class="hero-title reveal" style="font-size:2rem;color:var(--green)">Der Weg zur Mitgliedschaft</h2>
+      <div class="path">
+        <article class="step reveal"><div class="num">1</div><h3>Bewerbung</h3><p>Online-Formular ausfüllen.</p></article>
+        <article class="step reveal"><div class="num">2</div><h3>Erstgespräch</h3><p>Kurzgespräch bei positiver Vorauswahl.</p></article>
+        <article class="step reveal"><div class="num">3</div><h3>Aufnahme</h3><p>Direkte Vollmitgliedschaft nach Entscheidung.</p></article>
+      </div>
+
+      <div class="form-wrap reveal">
+        <img src="assets/maygasse-crest.svg" alt="crest" style="width:70px;display:block;margin:0 auto .5rem" />
+        <h3>Bewerbung & Mitgliedschaft</h3>
+        <form id="applicationForm" enctype="multipart/form-data">
+          <label>Name<input type="text" name="name" required /></label>
+          <label>Klasse<input type="text" name="klasse" required /></label>
+          <label>Resume/CV<input type="file" name="cv" accept=".pdf,.doc,.docx,.txt" required /></label>
+          <label>Motivation<textarea name="motivation" rows="4" required></textarea></label>
+          <label>Nachricht<textarea name="nachricht" rows="4" required></textarea></label>
+          <button type="submit">Absenden</button>
+          <p id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maygasse Finance Society</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="topbar container">
+        <a href="index.html#top" class="brand" aria-label="Maygasse Finance Society home">
+          <img src="assets/maygasse-crest.svg" alt="Maygasse Finance Society crest" class="brand-logo" />
+          <span>Maygasse Finance Society</span>
+        </a>
+        <div class="actions">
+          <a href="about.html" data-i18n="nav.about">Über uns</a>
+          <a href="membership.html" data-i18n="nav.join">Mitgliedschaft</a>
+          <button id="langToggle" class="lang-toggle" aria-label="Language switcher">EN</button>
+        </div>
+      </nav>
+
+      <div class="hero-content container fade-up">
+        <img src="assets/maygasse-crest.svg" alt="Maygasse Finance Society crest" class="hero-logo" />
+        <h1 data-i18n="hero.title">Maygasse Finance Society</h1>
+        <p data-i18n="hero.subtitle">Excellence in Financial Education. Leadership. Responsibility.</p>
+        <div class="hero-buttons">
+          <a href="#accordion" class="btn btn-primary" data-i18n="hero.btnAbout">Über uns entdecken</a>
+          <a href="membership.html" class="btn btn-secondary" data-i18n="hero.btnJoin">Mitglied werden</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section-soft" id="accordion">
+        <div class="container">
+          <h2 class="section-title" data-i18n="sections.headline">Akademisches Profil</h2>
+          <div class="accordion">
+            <article class="accordion-item open">
+              <button class="accordion-trigger" aria-expanded="true" data-i18n="vision.title">Vision & Zielsetzung</button>
+              <div class="accordion-panel">
+                <p data-i18n="vision.text">Förderung finanzieller Bildung durch praxisnahe Auseinandersetzung mit Wirtschaft, Kapitalmärkten und verantwortungsbewusstem Vermögensaufbau.</p>
+                <p style="margin-top:1rem;"><a href="vision.html" style="color:var(--green);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:.5rem;">Mehr erfahren →</a></p>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false" data-i18n="learning.title">Lernziele</button>
+              <div class="accordion-panel">
+                <ul>
+                  <li><a href="learning-1.html" data-i18n="learning.1">Aktien, ETFs, Anleihen verstehen</a></li>
+                  <li><a href="learning-2.html" data-i18n="learning.2">Marktanalysen interpretieren</a></li>
+                  <li><a href="learning-3.html" data-i18n="learning.3">Portfolioverwaltung</a></li>
+                  <li><a href="learning-4.html" data-i18n="learning.4">Unternehmensbewertung</a></li>
+                  <li><a href="learning-5.html" data-i18n="learning.5">Präsentations- & Teamfähigkeiten</a></li>
+                  <li><a href="learning-6.html" data-i18n="learning.6">Langfristiges Denken und Risikobewusstsein</a></li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false" data-i18n="activities.title">Aktivitäten</button>
+              <div class="accordion-panel">
+                <ul>
+                  <li><a href="activity-1.html" data-i18n="activities.1">Aktie/ETF der Woche</a></li>
+                  <li><a href="activity-2.html" data-i18n="activities.2">Markt-Updates</a></li>
+                  <li><a href="activity-3.html" data-i18n="activities.3">Portfolio-Challenges</a></li>
+                  <li><a href="activity-4.html" data-i18n="activities.4">Workshops (Excel, ETFs, Budgetplanung)</a></li>
+                  <li><a href="activity-5.html" data-i18n="activities.5">Gastvorträge</a></li>
+                  <li><a href="activity-6.html" data-i18n="activities.6">Business- & Startup-Pitches</a></li>
+                  <li><a href="activity-7.html" data-i18n="activities.7">Fallstudien und Wettbewerbe</a></li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false" data-i18n="org.title">Organisation</button>
+              <div class="accordion-panel">
+                <div class="org-group">
+                  <div class="org-header">
+                    <span class="org-icon">👑</span>
+                    <span data-i18n="org.1">Präsidium</span>
+                  </div>
+                  <ul class="org-members">
+                    <li>
+                      <span class="org-name" data-i18n="org.2">Fabio Juranek</span>
+                      <span class="org-role">Präsident</span>
+                    </li>
+                    <li>
+                      <span class="org-name" data-i18n="org.3">Nina Durstberger</span>
+                      <span class="org-role">Präsident</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false" data-i18n="plan.title">Jahresplan</button>
+              <div class="accordion-panel">
+                <ul>
+                  <li><a href="plan-1.html" data-i18n="plan.1">Weekly: Marktupdate & Workshops</a></li>
+                  <li><a href="plan-2.html" data-i18n="plan.2">Monthly: Gastvorträge oder Wettbewerbe</a></li>
+                  <li><a href="plan-3.html" data-i18n="plan.3">Halbjährlich: Exkursion</a></li>
+                  <li><a href="plan-4.html" data-i18n="plan.4">Jährlich: Große Investment-Challenge</a></li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section prestige" id="about">
+        <div class="container fade-up">
+          <p class="quote" data-i18n="about.text">A student-led academic society dedicated to excellence, discipline and long-term thinking.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <img src="assets/maygasse-crest.svg" alt="Maygasse Finance Society crest" class="footer-logo" />
+        <div>
+          <h3>Maygasse Finance Society</h3>
+          <p>Maygasse Business Academy</p>
+          <p>Est. 1983</p>
+        </div>
+      </div>
+
+      <div class="container footer-links">
+        <a class="footer-link" href="membership.html">▶ Mitgliedschaft</a>
+        <a class="footer-link" href="about.html">▶ Über uns</a>
+        <a class="footer-link" href="contact.html">▶ Kontakt</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
