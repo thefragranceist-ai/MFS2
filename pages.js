@@ -11,7 +11,12 @@ if (form && status) {
     event.preventDefault();
     status.textContent = 'Bewerbung wird gesendet...';
     try {
-      const res = await fetch('/api/apply', { method: 'POST', body: new FormData(form) });
+      const res = await fetch(form.action, {
+  method: 'POST',
+  body: new FormData(form),
+  headers: { 'Accept': 'application/json' }
+});
+
       if (!res.ok) throw new Error('failed');
       form.reset();
       status.textContent = 'Vielen Dank! Ihre Bewerbung wurde versendet.';
@@ -20,3 +25,4 @@ if (form && status) {
     }
   });
 }
+
