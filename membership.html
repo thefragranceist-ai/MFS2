@@ -58,7 +58,11 @@
       <div class="form-wrap reveal">
         <img src="assets/maygasse-crest.svg" alt="crest" style="width:70px;display:block;margin:0 auto .5rem" />
         <h3>Bewerbung & Mitgliedschaft</h3>
-        <form id="applicationForm" enctype="multipart/form-data">
+        <form id="applicationForm"
+      action="https://formspree.io/f/xjgeryzj"
+      method="POST"
+      enctype="multipart/form-data">
+
           <label>Name<input type="text" name="name" required /></label>
           <label>Klasse<input type="text" name="klasse" required /></label>
           <label>Resume/CV<input type="file" name="cv" accept=".pdf,.doc,.docx,.txt" required /></label>
@@ -73,3 +77,4 @@
   <script src="pages.js"></script>
 </body>
 </html>
+
