@@ -65,7 +65,10 @@
 
           <label>Name<input type="text" name="name" required /></label>
           <label>Klasse<input type="text" name="klasse" required /></label>
-          <label>Resume/CV<input type="file" name="cv" accept=".pdf,.doc,.docx,.txt" required /></label>
+          <label>Resume/CV (Link)
+  <input type="url" name="cv_link" placeholder="https://..." required />
+</label>
+
           <label>Motivation<textarea name="motivation" rows="4" required></textarea></label>
           <label>Nachricht<textarea name="nachricht" rows="4" required></textarea></label>
           <button type="submit">Absenden</button>
@@ -77,4 +80,5 @@
   <script src="pages.js"></script>
 </body>
 </html>
+
 
